@@ -6,9 +6,12 @@ let viloes_forcas = []
 let soma_forcas_viloes = 0
 let viloes
 let Sorteio = []
+
+alert("Vamos jogar Força ou Queda!")
+alert("Escolha 3 jogadores para seu time:")
 //Selecionar Personagens
 for(let i=0; i<3; i++){
-    personagens[i] = prompt("Digite o nome do seu personagem: ")
+    personagens[i] = prompt(`Digite o nome do seu ${(i+1)}° personagem: `)
 
     //Sortear a forcas dos personagens e somar
     personagens_forcas[i] = Math.floor(Math.random() * 10) + 1
